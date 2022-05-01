@@ -1,0 +1,122 @@
+  #main-nav a {
+    color: #fff;
+    /* background: #254441; */
+    font-weight: bold;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    transition: all 0.4s;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+  #main-nav a:hover {
+    text-shadow: 3px 5px 6px #fff;
+  }
+  
+  #main-nav ul {
+    list-style: none;
+    display: flex;
+  }
+#main-nav .links{
+  margin-left: 3rem;
+}
+#main-nav .links-2{
+  margin-right: 3rem;
+}
+
+  #main-nav li {
+    width: 200%;
+    position: relative;
+    margin-right: 5rem;
+    z-index: 30;
+  }
+
+  #main-nav .submenu .min {
+   width: 150% !important;
+   text-align: left !important;
+  }
+  #main-nav .submenu .wide {
+   width: 460% !important;
+   text-align: left !important;
+  }
+  #main-nav .submenu .mid {
+   width: 250% !important;
+   text-align: left !important;
+  }
+  
+  #main-nav li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0px;
+  }
+  
+  .submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: -2rem !important;
+    background-color: #4e4e4e;
+    z-index: 5;
+}
+.submenu li a{
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+    color: #fff !important;
+    font-size: 12px !important;
+  }
+  .submenu li a:hover{
+    background-color: #00709f !important;
+}
+
+.submenu {
+  text-align: left !important;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+    width: 100%;
+  }
+  
+  .submenu li {
+    position: relative;
+  }
+  
+  .submenu li:hover .submenu-2 li {
+    display: block;
+  }
+  
+  .submenu-2 li {
+    display: none;
+    margin-left: .1rem;
+  }
+  .submenu-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 120px;
+  }
+  .min-sub2{
+    left: 115%;
+  }
+  .mid-sub2{
+    left: 106%;
+  }
+  .max-sub2 li{
+    margin-left: 2.3rem !important;
+  }
+  .arrow {
+    margin-left: 8px;
+    color: #eee;
+    font-size: 12px;
+  }
+  .main-arrow{
+    padding-left: .5rem;
+  }
+
+  @media (max-width: 720px){
+    header .bottom{
+    display: none !important;
+  }
+}
